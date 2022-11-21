@@ -71,7 +71,7 @@ dependencies = [
 ]
 
 [tool.hatch.envs.default.scripts]
-cov = "pytest -vx --cov-report=term-missing --cov-config=pyproject.toml --cov=src/codecov_demo"
+cov = "pytest -vx --cov-report=term-missing --cov-config=pyproject.toml --cov=src/codecov_demo --cov=tests/"
 no-cov = "cov --no-cov"
 
 [tool.hatch.envs.style]
