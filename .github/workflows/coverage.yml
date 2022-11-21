@@ -21,7 +21,7 @@ jobs:
         pip install pytest-cov
         pip install .
     - name: Run tests and collect coverage
-      run: pytest -v --cov=./src/codecov_demo --cov=./tests --cov-config=pyproject.toml --cov-report=term-missing --cov-report=xml
+      run: pytest -v --cov=./src/codecov_demo --cov=./tests --cov-config=pyproject.toml --cov-report=term-missing --cov-report=xml ./tests
     - name: Upload coverage reports to Codecov with GitHub Action
       uses: codecov/codecov-action@v3
       with:
