@@ -8,7 +8,7 @@ jobs:
     name: Test coverage
     defaults:
       run:
-        working-directory: ./codecov-demo
+        working-directory: .
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-python@v4
